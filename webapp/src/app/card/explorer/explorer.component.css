@@ -1,0 +1,22 @@
+.border {
+    border: 2px black solid;
+    padding: 5px;
+}
+
+.border1 {
+    border: 1px black solid;
+    padding: 2px;
+    margin: 2px;
+}
+
+.txOK {
+    background-color: #ddffdd;
+}
+
+.txRejected {
+    background-color: #ffdddd;
+}
+
+.center {
+    text-align: center;
+}

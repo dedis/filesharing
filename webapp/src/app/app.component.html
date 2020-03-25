@@ -1,0 +1,36 @@
+<div *ngIf="loading">
+    <div fxLayout="column" style="margin-top:2em; min-height: 95vh;">
+        <div fxLayout="row" fxFlex="1 1 100%" fxLayoutAlign="center">
+            <div fxFlex="90%" fxFlexOffset="0">
+                <h1 class="center">Loading Demo</h1><br>
+                <div class="progress-box">
+                    <div class="progress-text">
+                        <div [style.width.%]="percentage" class="progress-bar">
+                        </div>
+                        {{ text }}
+                    </div>
+                </div>
+
+                <pre class="progress-log">{{log}}</pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!loading">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-xl-4">
+                <app-user [user]="users[0]"></app-user>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+                <app-user [user]="users[1]"></app-user>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+                <app-user [user]="users[2]"></app-user>
+            </div>
+            <div class="col-lg-12 col-xl">
+                <app-explorer [bcID]="bcID"></app-explorer>
+            </div>
+        </div>
+    </div>
+</div>

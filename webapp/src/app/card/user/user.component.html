@@ -1,0 +1,43 @@
+<div class="row border">
+    <div class="col">
+        <h1 class="center">{{ user.credStructBS.credPublic.alias | async | titlecase }}</h1>
+
+        <!--    <div class="container-fluid">-->
+        <div class="row">
+            <div class="col-12 col-sm col-lg-12 col-xl user-card">
+                <mat-list>
+                    <h2 class="center">Contacts</h2>
+                    <mat-list-item *ngFor="let u of (user.addressBook.contacts | async)">
+                        <span class="name">{{u.credPublic.alias | async}}</span>
+                        <button mat-stroked-button (click)="lookup(u)">Lookup Files</button>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+
+            <div class="col-12 col-sm col-lg-12 col-xl user-card">
+                <mat-list>
+                    <h2 class="center">DARCs</h2>
+                    <mat-list-item *ngFor="let u of (user.addressBook.groups | async)">
+                        <span class="name">{{(u | async).description.toString()}}
+                            <button mat-stroked-button (click)="editShow(u)">Edit</button>
+                        </span>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col user-card">
+                <mat-list>
+                    <h2 class="center">Files</h2>
+                    <mat-list-item *ngFor="let c of calypsoKVs">
+                        <span class="name">{{ c.value }}</span>
+                        <button mat-stroked-button (click)="fileDelete(c)">Delete</button>
+                    </mat-list-item>
+                </mat-list>
+                <button mat-stroked-button (click)="fileNew()">New File</button>
+            </div>
+        </div>
+        <!--    </div>-->
+    </div>
+</div>

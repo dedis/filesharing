@@ -1,0 +1,28 @@
+<div class="border">
+    <h1 class="center">Block Explorer</h1>
+
+    <div fxLayout="row">
+        <div *ngIf="blocks.length > 0 && blocks[0].index > 0"
+             fxLayoutAlign="center center"
+             (click)="prependBlock(blocks[0].index-1)">Back
+        </div>
+        <div *ngFor="let block of blocks; index as i">
+            <div *ngIf="i > 0" fxLayoutAlign="center center">Back</div>
+            <div fxFlex="1 1 auto" class="border1">
+                Index: {{block.index}}<br>
+                Time: {{block.timestamp}}<br>
+                Instructions: <br>
+                <div *ngFor="let inst of block.insts">
+                    <span class="{{inst.ok}}">{{inst.str}}</span>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="blocks.length == 4 && blocks[3].index < last.index"
+             fxLayoutAlign="center center"
+             (click)="appendBlock(blocks[3].index+1)">Forward
+        </div>
+    </div>
+
+    <h1 class="center">Calypso Logs</h1>
+    <pre>Not sure this will get here :(</pre>
+</div>

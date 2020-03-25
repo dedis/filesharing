@@ -1,0 +1,19 @@
+<div *ngIf="display === 0">
+    <ul>
+        <li *ngFor="let c of kvs">
+            {{ c.value }} - {{ c.ok ? "allowed" : "refused" }}
+            <button mat-stroked-button (click)="download(c)">Download</button>
+        </li>
+    </ul>
+    <button mat-raised-button color='primary' [mat-dialog-close]="" cdkFocusInitial>Close</button>
+</div>
+<div *ngIf="display === 1">
+    <h1>{{name}}</h1>
+    <pre>{{content}}</pre>
+    <button mat-raised-button (click)="display = 0">Close</button>
+</div>
+<div *ngIf="display === 2">
+    <h1>Error while decrypting</h1>
+    <p>{{content}}</p>
+    <button mat-raised-button (click)="display = 0">Close</button>
+</div>

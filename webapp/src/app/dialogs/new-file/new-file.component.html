@@ -1,0 +1,21 @@
+<div>
+    <h2>Create a new file</h2>
+    <p>
+        <mat-form-field class="width100">
+            <input matInput [(ngModel)]="data.name" placeholder="Name for new file">
+        </mat-form-field>
+        <mat-form-field class="width100">
+            <textarea matInput [(ngModel)]="data.content" placeholder="Content of file"></textarea>
+        </mat-form-field>
+        <mat-form-field class="width100">
+            <mat-select [(value)]="data.chosen" required>
+                <mat-option *ngFor="let d of (data.darcs|async)"
+                            [value]="d.getValue().getBaseID().toString('hex')">{{(d|async).description.toString()}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </p>
+    <p>
+        <button mat-raised-button mat-dialog-close>Cancel</button>
+        <button mat-raised-button color='primary' [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+    </p>
+</div>

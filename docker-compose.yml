@@ -1,0 +1,13 @@
+version: "3.0"
+
+services:
+  byzcoin:
+    ports:
+      - "7770-7777:7770-7777"
+    image: filesharing/byzcoin:latest
+    #volumes:
+      #- ./docker/byzcoin/build/conodes:/root/conodes
+  webapp:
+    ports:
+      - "8080:8080"
+    image: filesharing/webapp:latest

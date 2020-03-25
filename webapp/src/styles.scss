@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.width100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.user-card {
+  background-color: #f8f8f8;
+  margin: 2px;
+}
