@@ -1,0 +1,13 @@
+Login = "enisalp"
+Host = "users.deterlab.net"
+Project = "SAFER"
+Experiment = "OCS-OTS"
+ProxyAddress = "localhost"
+MonitorAddress = "users.isi.deterlab.net"
+MonitorPort = 11000
+Servers = 4
+Simulation = "OTS"
+Hosts = 0
+Debug = 0
+RunWait = 4000
+PreScript = ""

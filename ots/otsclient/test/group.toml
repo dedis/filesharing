@@ -1,0 +1,40 @@
+[[servers]]
+  Address = "tcp://127.0.0.1:7002"
+  Public = "Ewu5GwplZFhmTBXUjaaiGms/NJiXMkAKjLaA5W9H2i8="
+  Description = "Conode_1"
+[[servers]]
+  Address = "tcp://127.0.0.1:7004"
+  Public = "WBRyc0FoYUS7HjOW7c9QRn6eT4bCA8qowhjkG7lrdTY="
+  Description = "Conode_2"
+[[servers]]
+  Address = "tcp://127.0.0.1:7006"
+  Public = "msvBDy5jM1/z6+FsIIZ/A5uAUKtiAhN0DNi4ly9kyQA="
+  Description = "Conode_3"
+[[servers]]
+  Address = "tcp://127.0.0.1:7008"
+  Public = "RnX5GLmbnuk0bIMy8vF9pKoxncZe+kvnX8ejpXugcO4="
+  Description = "Conode_4"
+[[servers]]
+  Address = "tcp://127.0.0.1:7010"
+  Public = "OwkTUCtE2RZZXtw/ia8/u2LZ0Oaef1GAdJEQbItlVTw="
+  Description = "Conode_5"
+[[servers]]
+  Address = "tcp://127.0.0.1:7012"
+  Public = "HeotQGVj4FPffieV4trRx1BRMJk5sJfLEzZyVQrbuDI="
+  Description = "Conode_6"
+[[servers]]
+  Address = "tcp://127.0.0.1:7014"
+  Public = "dpx23SzRQlM4afNzq/QMhl7871FkRDYJnRKh8PBkupo="
+  Description = "Conode_7"
+[[servers]]
+  Address = "tcp://127.0.0.1:7016"
+  Public = "fhkU2zRh4EtmUiErBQayuM/xYwQSY04eM831TZP4q3k="
+  Description = "Conode_8"
+[[servers]]
+  Address = "tcp://127.0.0.1:7018"
+  Public = "JMJgkwZMeZSVpMYTLaYRwQzKnn1gy7aMBsr9qLbqeZU="
+  Description = "Conode_9"
+[[servers]]
+  Address = "tcp://127.0.0.1:7020"
+  Public = "H1AqVPVAZw37px80BO643XCue87EUxfZpFK5zjWzpGs="
+  Description = "Conode_10"
