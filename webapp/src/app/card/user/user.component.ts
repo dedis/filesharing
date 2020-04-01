@@ -10,6 +10,7 @@ import {EditDarcComponent} from "src/app/dialogs/edit-darc/edit-darc";
 import Log from "src/lib/log";
 import {map} from "rxjs/operators";
 import {INewFile, NewFileComponent} from "src/app/dialogs/new-file/new-file.component";
+import {ShowFileComponent} from "src/app/dialogs/show-file/show-file.component";
 
 @Component({
     selector: 'app-user',
@@ -71,6 +72,13 @@ export class UserComponent implements OnInit {
                     this.user.calypso.rmFile(tx, c.value), 10);
             })
 
+    }
+
+    async fileShow(c: InstanceMapKV){
+        this.dialog.open(ShowFileComponent,
+            {
+                data: {user: this.user, wrID: c.key},
+            });
     }
 
     async editShow(u: DarcBS) {

@@ -26,6 +26,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {EditDarcComponent} from "src/app/dialogs/edit-darc/edit-darc";
 import { NewFileComponent } from './dialogs/new-file/new-file.component';
 import {FormsModule} from "@angular/forms";
+import { ShowFileComponent } from './dialogs/show-file/show-file.component';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import {FormsModule} from "@angular/forms";
         DialogTransactionComponent,
         CalypsoComponent,
         EditDarcComponent,
-        NewFileComponent
+        NewFileComponent,
+        ShowFileComponent
     ],
     imports: [
         BrowserModule,
@@ -63,7 +65,8 @@ import {FormsModule} from "@angular/forms";
         DialogTransactionComponent,
         CalypsoComponent,
         EditDarcComponent,
-        NewFileComponent
+        NewFileComponent,
+        ShowFileComponent
     ]
 })
 export class AppModule {

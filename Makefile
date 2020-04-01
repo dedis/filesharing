@@ -14,3 +14,6 @@ build: webapp/dist
 	cp -a webapp/dist/webapp docker/webapp/dist
 	cp -a webapp/src/assets docker/webapp/dist
 	docker build -t filesharing/webapp docker/webapp
+
+docker_bc:
+	docker run -ti -p7770-7777:7770-7777 filesharing/byzcoin

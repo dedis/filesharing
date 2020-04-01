@@ -7,6 +7,10 @@ When trying to access a file that is not allowed, the chain will refuse to do so
 
 ## Start it
 
+Before you start it, you need to have Docker installed:
+
+https://www.docker.com/products/docker-desktop
+
 As everything is already compiled and put in a docker image, you can simply start it with:
 
 ```bash
@@ -16,14 +20,22 @@ docker-compose up
 This will start to download the docker images, and then run them.
 Once they are started, you can launch your webbrowser to connect to the following address:
 
-http://localhost:4200
+http://localhost:8080
+
+## Update it
+
+If there is a new version of the software, you need to update the docker images:
+
+```bash
+docker-compose pull
+```
 
 ## Compile it
 
 If you do changes, you can compile it again using:
 
 ```bash
-docker-compose build
+make docker
 ```
 
 Afterwards you have to re-start the docker containers.

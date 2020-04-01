@@ -32,12 +32,12 @@
                     <h2 class="center">Files</h2>
                     <mat-list-item *ngFor="let c of calypsoKVs">
                         <span class="name">{{ c.value }}</span>
+                        <button mat-stroked-button (click)="fileShow(c)">Details</button>
                         <button mat-stroked-button (click)="fileDelete(c)">Delete</button>
                     </mat-list-item>
                 </mat-list>
                 <button mat-stroked-button (click)="fileNew()">New File</button>
             </div>
         </div>
-        <!--    </div>-->
     </div>
 </div>

@@ -1,0 +1,16 @@
+<div fxLayout="column">
+    <div>
+        <span class="mat-body-strong">Name:</span> {{name}}<br>
+        <span class="mat-body-strong">Darc:</span>
+        <span *ngIf="darc === undefined">Looking it up</span>
+        <span *ngIf="darc !== undefined">
+            {{(darc|async).description.toString()}}
+        </span>
+    </div>
+    <div>
+        <pre>{{status}}{{history}}</pre>
+    </div>
+    <div>
+        <button mat-raised-button color='primary' [mat-dialog-close]="" cdkFocusInitial>Close</button>
+    </div>
+</div>

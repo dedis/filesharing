@@ -41,9 +41,7 @@ export class Calypso {
 
     async getFile(tx: CredentialTransaction, wrID: Buffer, kp: KeyPair, p?: TProgress): Promise<Buffer> {
         if (p){
-            // await new Promise(resolve => setTimeout(resolve, 500));
             p(50, "Decryption Request");
-            // await new Promise(resolve => setTimeout(resolve, 1500));
         }
         const rdID = tx.spawnCalypsoRead(wrID, kp.pub);
         await tx.sendCoins(10);
