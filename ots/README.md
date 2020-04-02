@@ -21,12 +21,12 @@ OTS uses both the access-control and secret-management cothority:
    Additionally, she creates a simple access control policy that specifies the
    authorized readers.
 2. Writer sends a write transaction to ACC by calling
-   [`WriteTxnRequest`](./api.go), which serves as an endpoint for [the ACC
-   service](./service/service.go).
+   [`WriteTxnRequest`](./onchain-secrets/api.go), which serves as an endpoint for [the ACC
+   service](./onchain-secrets/service.go).
 3. Reader first fetches the proof for the write transaction from the skipchain.
    He then creates a read transaction and sends it to ACC by calling
-   [`ReadTxnRequest`](./api.go), which serves as an endpoint for [the ACC
-   service](./service/service.go).
+   [`ReadTxnRequest`](./onchain-secrets/api.go), which serves as an endpoint for [the ACC
+   service](./onchain-secrets/service.go).
 4. Reader prepares the decryption request using the proofs for read and write
    transactions. He sends the request to SMC by calling
    [`OTSDecrypt`](./otssmc/service/api.go), which serves as an endpoint for the
