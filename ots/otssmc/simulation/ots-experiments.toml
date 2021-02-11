@@ -1,0 +1,13 @@
+Simulation = "OTS"
+Servers = 4
+Rounds = 3
+RunWait = 4000
+Delay = 100
+Bandwidth = 100
+
+Hosts, BF
+16,15
+32,31
+64,63
+128,127
+256,255
