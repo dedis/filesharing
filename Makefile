@@ -5,7 +5,8 @@ start:
 	open webapp/build/index.html
 
 webapp/dist: webapp/src
-	npm build
+	npm ci
+	npm run build
 
 build: webapp/dist
 	make -C docker/byzcoin docker
