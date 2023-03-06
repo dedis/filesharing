@@ -31,7 +31,7 @@
     "isomorphic-ws": "^4.0.1",
     "keccak": "^3.0.0",
     "long": "^4.0.0",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "protobufjs": "^6.11.3",
     "pure-uuid": "^1.6.0",
     "rxjs": "^6.5.4",
